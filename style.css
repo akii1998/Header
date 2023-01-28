@@ -401,7 +401,15 @@
    .bannerHeading {
      font-size: 0.6rem;
    }
-
+   .textContent{
+    z-index: 1;
+   }
+   .photoContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 22vw;
+    height: 68vh;
+  }
    .cardContainer {
      height: 40vh;
      width: 35vw;
