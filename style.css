@@ -1,10 +1,6 @@
  /* css for full screen from min-width 1024px to upto max-width 1400px  */
 
-
-
- /*-------------------------------------Universal CSS -------------------------------------------------- */
-
-
+ /*---------------Universal CSS -------------------- */
 
  * {
    margin: 0;
@@ -14,7 +10,7 @@
    border: none;
  }
 
- /*---------------------------------Main Container CSS--------------------------------------------------*/
+ /*------------------Main Container CSS------------------*/
 
  .mainContainer {
    height: 100vh;
@@ -22,7 +18,7 @@
    background-color: black;
  }
 
- /* --------------------------------Header Container CSS------------------------------------------------ */
+ /* ----------Header Container CSS---------------------- */
 
  .headerContainer {
    background: #d4b262;
@@ -49,7 +45,7 @@
 
  }
 
- /* -------------------------------- Meeting Details Container CSS--------------------------------------  */
+ /* --------- Meeting Details Container CSS-----------------  */
 
  .secretsContainer {
    width: 100vw;
@@ -163,7 +159,8 @@
 
 
 
- /*---------------------------------- banner Container CSS----------------------------------------------- */
+ /*----------------- banner Container CSS--------------------- */
+
  .banner {
    width: 100vw;
    flex-direction: row;
@@ -227,7 +224,7 @@
  }
 
 
- /*--------------------------------------------------- Quote line CSS------------------------------------*/
+ /*------------------- Quote line CSS-------------------*/
  .quoteLine {
    text-align: center;
    color: white;
@@ -245,7 +242,8 @@
  }
 
 
- /*----------------------------------------------- Break Line -----------------------------------------  */
+ /*--------------- Break Line ---------------  */
+
  .quoteLineBorder {
    background-color: black;
    /* position: relative; */
@@ -253,25 +251,28 @@
    padding: 0.09;
    display: flex;
    justify-content: center;
-   align-self: center;
+   align-items: center;
+    border: 0;
+   border-width: 0;
  }
 
 
  .LineBorder {
    background-color: navy;
-   width: 94%;
-   height: 0.3rem;
-   border: none;
+   align-content: center;
+   width: 93%;
+   height: 0.4rem;
+   border: 0;
+   border-width: 0;
  }
 
 
- /* ----------------------------------- Card Container CSS------------------------------------------ */
+ /* ------------------ Card Container CSS---------------- */
 
 
  .gridContainer {
    display: flex;
    gap: 2.5rem;
-   /* grid-template-columns: auto auto auto auto; */
    flex-wrap: wrap;
    justify-content: center;
    background: #000;
@@ -279,13 +280,14 @@
  }
 
  .cardContainer {
-   background-color: rgb(239, 247, 228);
+   background-color:white;
    border: 1px solid black;
    width: 21vw;
    height: 35vh;
    align-items: center;
    justify-content: center;
    text-align: center;
+
  }
 
  .cardContainer>p>i {
@@ -303,7 +305,8 @@
 
 
 
- /* ----------------------------------footer Container CSS----------------------------------------------- */
+ /* -------------footer Container CSS-------------------- */
+
  .footerMain {
    background-color: black;
    display: flex;
@@ -343,10 +346,21 @@
 
 
 
- /*------------------------------- Media Query for Max-width screen(1024px)-------------------------------*/
+ /*----- Media Query for Max-width screen(1024px)--------------*/
 
 
  @media screen and (max-width: 1024px) {
+  *{
+    border: none;
+  }
+
+  .quoteLineBorder{
+   border: none;
+  }
+
+  .LineBorder{
+    border: none;
+  }
    .cardContainer {
      height: 40vh;
      width: 28vw;
@@ -364,19 +378,24 @@
  }
 
 
- /*------------------------------- Media Query for Max-width screen(768px)-------------------------------*/
+ /*--------- Media Query for Max-width screen(768px)------------------*/
 
 
 
  @media screen and (max-width: 768px) {
+  *{
+    border: none;
+  }
+  
+  .quoteLineBorder{
+   border: none;
+  }
+
+  .LineBorder{
+    border: none;
+  }
    .quoteLine {
      font-size: 1rem;
-   }
-
-   .secretsContainer {
-     /* display: flex; */
-     /* flex-direction: column; */
-
    }
 
    .bannerHeading {
@@ -397,10 +416,21 @@
  }
 
 
- /*---------------------- Media Query for Max-width screen(480) or Mobile View--------------------------*/
+ /*------- Media Query for Max-width screen(480) or Mobile View-------------*/
 
  @media screen and (max-width: 480px) {
 
+  *{
+    border: none;
+  }
+  
+  .quoteLineBorder{
+   border: none;
+  }
+
+  .LineBorder{
+    border: none;
+  }
    /*Main Container*/
 
    .mainContainer {
@@ -501,8 +531,6 @@
      width: 100%;
      padding: 3vh 0;
    }
-
-   .bannerTitle img {}
 
    .bannerHeading {
      margin-top: 2.5vh;
