@@ -1,6 +1,6 @@
 # Landing Page- Full Responsive
 
-Site [Link]()
+Site [Link](https://rigi-landing-page.vercel.app/)
 
 Github [Link]()
 
