@@ -1,8 +1,7 @@
 # Landing Page- Full Responsive
 
-Site [Link](https://rigi-landing-page.vercel.app/)
+Hosted Link [Link](https://rigi-landing-page.vercel.app/)
 
-Github [Link]()
 
 ## Tech Stack
 
